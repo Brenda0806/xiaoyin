@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>周末去了一家很安静的咖啡馆 — 我是陈小银</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">陈小银</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">首页</a></li>
+      <li><a href="../life.html">生活</a></li>
+      <li><a href="../feelings.html">感情</a></li>
+      <li><a href="../work.html">工作</a></li>
+      <li><a href="../index.html#about">关于</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="article-hero" style="background:linear-gradient(180deg,#fde0d0,var(--cream));">
+  <div style="width:70px;height:70px;border-radius:50%;overflow:hidden;margin:0 auto 16px;box-shadow:0 4px 16px rgba(232,113,74,0.2);border:2px solid var(--orange);">
+    <img src="../images/avatar-cartoon.png" alt="" style="width:100%;height:100%;object-fit:cover;">
+  </div>
+  <p class="article-cat life" style="display:inline-block;margin-bottom:16px;background:rgba(232,113,74,0.12);color:var(--orange);">生活随笔</p>
+  <h1>周末去了一家很安静的咖啡馆</h1>
+  <div class="meta">
+    <span>2025-06-15</span>
+    <span class="dot"></span>
+    <span>5 分钟阅读</span>
+  </div>
+</section>
+
+<article class="article-content">
+  <p>周六下午，没有特别的目的地，只是想出门走走。拐进一条不太熟的巷子，意外发现了一家没有招牌的小咖啡馆。</p>
+
+  <p>木门半掩着，推门进去，风铃轻轻响了一声。店里只有三张桌子，老板在吧台后面安静地冲咖啡，没有抬头招呼，只是点了一下头，算是打过招呼了。</p>
+
+  <p>我点了一杯热拿铁，找了个靠窗的位置坐下。窗外是老小区的梧桐树，阳光透过树叶洒在桌面上，斑斑驳驳的。</p>
+
+  <h2>慢下来的感觉</h2>
+
+  <p>突然意识到，我已经很久没有这样坐过了。不是"坐在咖啡馆打卡拍照"的那种坐，而是真正地、什么都不干地坐着。</p>
+
+  <p>手机放在桌上，屏幕朝下。我看着窗外的树叶被风吹得轻轻摇晃，看着路过的人裹紧外套，看着咖啡的蒸气慢慢散开。</p>
+
+  <blockquote>原来"慢"不是一种状态，是一种能力。而且这种能力，不用就会退化。</blockquote>
+
+  <h2>一杯咖啡的时间</h2>
+
+  <p>那杯拿铁很好喝，奶泡很细，咖啡豆有一点果酸味。我喝得很慢，喝了差不多一个小时。</p>
+
+  <p>中间老板换了一首歌，是我很喜欢但叫不出名字的那首。我差点想问，但忍住了。有些时刻，沉默比对话更合适。</p>
+
+  <p>走的时候，我在门口站了一会儿，想：以后要多来这种地方。不是因为咖啡好喝，而是因为这里让我感觉——我属于我自己。</p>
+
+  <p>如果你也在读这篇文章，推荐你这周末也去找一家安静的咖啡馆，不带书，不带工作，就坐一会儿。你会发现，那个安静的自己，其实一直都在。</p>
+
+  <p style="text-align:center; color:#8fa876; font-size:14px; margin-top:40px;">— 写于 2025 年 6 月 15 日，一杯拿铁之后</p>
+</article>
+
+<div class="section" style="padding-top:0;">
+  <a href="../life.html" class="back-link">← 返回生活随笔</a>
+</div>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="../index.html">首页</a>
+    <a href="#">微信公众号</a>
+    <a href="https://www.xiaoyuzhoufm.com" target="_blank">小宇宙播客</a>
+  </div>
+  <p>© 2026 我是陈小银 · 没有一朵花，一开始就是一朵花 🌸</p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+  const t = document.getElementById('navToggle');
+  const l = document.getElementById('navLinks');
+  t.addEventListener('click', () => { t.classList.toggle('open'); l.classList.toggle('open'); });
+</script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我是陈小银 — 生活 · 感情 · 工作</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== 导航 ========== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" style="font-size:16px;letter-spacing:1px;">欢迎进入小银的世界</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">首页</a></li>
+      <li><a href="life.html">生活</a></li>
+      <li><a href="feelings.html">感情</a></li>
+      <li><a href="work.html">工作</a></li>
+      <li><a href="#about">Me</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ========== 主页头部 ========== -->
+<section class="hero" style="background:linear-gradient(180deg,#fde8d8 0%,#fef9f5 100%);">
+  <div class="hero-avatar" style="width:120px;height:120px;border-radius:50%;overflow:hidden;background:linear-gradient(135deg,#f5a89a,#e8714a);box-shadow:0 8px 32px rgba(232,113,74,0.25);">
+    <img src="images/hero-new.jpg" alt="陈小银" style="width:100%;height:100%;object-fit:cover;">
+  </div>
+  <h1>我是陈小银</h1>
+  <p class="hero-tagline">
+    温柔但清醒，陪你谈情也谈成长。<br>
+    没有一朵花，一开始就是一朵花。
+  </p>
+  <div class="hero-tags">
+    <a href="#about" class="tag">🌸 安徽生</a>
+    <a href="#about" class="tag">🏙 北京学</a>
+    <a href="#about" class="tag">🌶 重庆安</a>
+    <a href="#about" class="tag">🎂 90后</a>
+    <a href="#about" class="tag">♍ 处女座</a>
+  </div>
+</section>
+
+<!-- ========== 各平台入口 ========== -->
+<div class="section">
+  <div class="section-header">
+    <h2>找到我的地方</h2>
+    <p>公众号写了11年 · 小宇宙两个节目慢慢更新中</p>
+  </div>
+
+  <div class="categories">
+    <!-- 微信公众号 -->
+    <a href="#" class="cat-card life" onclick="event.preventDefault(); document.getElementById('wechat-qrcode').style.display='flex';">
+      <div class="cat-icon" style="font-size:30px;background:rgba(232,113,74,0.12);">📱</div>
+      <h3>微信公众号</h3>
+      <p><strong>我是陈小银</strong><br>11年 · 82篇原创<br>温柔但清醒的文字</p>
+      <span class="cat-count">点击查看 →</span>
+    </a>
+    <!-- 小宇宙：咖啡馆 -->
+    <a href="https://www.xiaoyuzhoufm.com/podcast/6983677f36cd09414476e593" target="_blank" class="cat-card feeling" id="xiaoyuzhou-life">
+      <div class="cat-icon" style="font-size:30px;background:rgba(232,168,124,0.15);">☕</div>
+      <h3>小宇宙 · 咖啡馆</h3>
+      <p><strong>陈小银的咖啡馆</strong><br>情绪自留地 · 治愈陪伴<br>不讲课，只聊天</p>
+      <span class="cat-count">去收听 →</span>
+    </a>
+    <!-- 小宇宙：发光 -->
+    <a href="https://www.xiaoyuzhoufm.com/podcast/69836793d0784d1a7eda0f9f" target="_blank" class="cat-card work" id="xiaoyuzhou-work">
+      <div class="cat-icon" style="font-size:30px;background:rgba(107,91,79,0.10);">✨</div>
+      <h3>小宇宙 · 发光场</h3>
+      <p><strong>陈小银在发光</strong><br>制造业培训 · 职场成长<br>真实可落地</p>
+      <span class="cat-count">去收听 →</span>
+    </a>
+  </div>
+</div>
+
+<!-- 微信公众号弹窗（默认隐藏） -->
+<div id="wechat-qrcode" style="display:none; position:fixed; top:0;left:0;right:0;bottom:0;z-index:200;background:rgba(60,50,40,0.7); align-items:center; justify-content:center;" onclick="this.style.display='none'">
+  <div style="background:#fff; border-radius:16px; padding:32px; text-align:center; max-width:320px;" onclick="event.stopPropagation()">
+    <img src="images/qrcode-wechat.png" alt="微信公众号二维码" style="width:220px;height:220px;object-fit:contain;border-radius:12px;margin-bottom:16px;">
+    <h3 style="color:var(--brown-d);margin-bottom:8px;">📱 微信公众号</h3>
+    <p style="color:var(--text-l);font-size:14px;line-height:1.6;">搜索「<strong style="color:var(--orange);">我是陈小银</strong>」关注我<br>或微信扫码直接进入 🌸</p>
+    <button onclick="document.getElementById('wechat-qrcode').style.display='none'" style="margin-top:16px;padding:8px 28px;border:1px solid var(--border);border-radius:20px;background:none;color:var(--text-l);cursor:pointer;font-size:13px;">关闭</button>
+  </div>
+</div>
+
+<!-- ========== 文章分类 ========== -->
+<div class="section" style="background:var(--warm); border-radius:16px;">
+  <div class="section-header">
+    <h2>文章分类</h2>
+    <p>三个方向，都是我自己</p>
+  </div>
+
+  <div class="categories">
+    <!-- 生活 -->
+    <a href="life.html" class="cat-card life">
+      <div class="cat-icon">🌿</div>
+      <h3>生活</h3>
+      <p>日常碎片、旅行见闻<br>美食记录、生活感悟</p>
+      <span class="cat-count">82 篇原创</span>
+    </a>
+    <!-- 感情 -->
+    <a href="feelings.html" class="cat-card feeling">
+      <div class="cat-icon">💛</div>
+      <h3>感情</h3>
+      <p>心事日记、亲密关系<br>自我对话、情绪记录</p>
+      <span class="cat-count">温柔但清醒</span>
+    </a>
+    <!-- 工作 -->
+    <a href="work.html" class="cat-card work">
+      <div class="cat-icon">✍️</div>
+      <h3>工作</h3>
+      <p>职场思考、成长复盘<br>方法论、读书笔记</p>
+      <span class="cat-count">陪你成长</span>
+    </a>
+  </div>
+</div>
+
+<!-- ========== 最新文章 ========== -->
+<div class="section">
+  <div class="section-header">
+    <h2>最新文章</h2>
+    <p>标题和摘要在这里，全文在公众号「我是陈小银」</p>
+  </div>
+
+  <div class="article-list">
+
+    <!-- 文章1：关于我 -->
+    <div class="article-card" onclick="document.getElementById('wechat-qrcode').style.display='flex';" style="cursor:pointer;">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#f5a89a,#e8714a);">🌸</div>
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="article-cat life">生活</span>
+          <span class="dot"></span>
+          <span>公众号</span>
+        </div>
+        <h3>关于我：温柔但清醒，陪你谈情也谈成长</h3>
+        <p>安徽生、北京拼、重庆安，处女座，带点文艺。我不做"情感专家"，只想做一个一起清醒、一起自愈的朋友。</p>
+        <span class="article-link" style="color:var(--orange);">阅读原文 →</span>
+      </div>
+    </div>
+
+    <!-- 文章2 -->
+    <div class="article-card" onclick="document.getElementById('wechat-qrcode').style.display='flex';" style="cursor:pointer;">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#f0d4b8,#e8a87c);">💛</div>
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="article-cat feeling">感情</span>
+          <span class="dot"></span>
+          <span>公众号</span>
+        </div>
+        <h3>关于"不再期待"这件事</h3>
+        <p>有时候不是不想被爱，只是累了。写下这些，不是为了抱怨，而是想和自己好好谈一谈。</p>
+        <span class="article-link" style="color:var(--orange);">阅读原文 →</span>
+      </div>
+    </div>
+
+    <!-- 文章3 -->
+    <div class="article-card" onclick="document.getElementById('wechat-qrcode').style.display='flex';" style="cursor:pointer;">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#d4c8b8,#6b5b4f);">✍️</div>
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="article-cat work">工作</span>
+          <span class="dot"></span>
+          <span>公众号</span>
+        </div>
+        <h3>职场第三年，我学会了说"不"</h3>
+        <p>不是变得冷漠，而是终于明白：边界感不是自私，是对自己和他人都负责。</p>
+        <span class="article-link" style="color:var(--orange);">阅读原文 →</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 更多文章提示 -->
+  <div style="text-align:center;margin-top:24px;padding:16px;background:rgba(232,113,74,0.06);border-radius:12px;">
+    <p style="color:var(--brown-d);font-size:14px;line-height:1.8;">📌 更多文章在公众号「<strong style="color:var(--orange);">我是陈小银</strong>」持续更新中<br>点击任意文章卡片的「阅读原文」，扫码关注即可查看全文</p>
+  </div>
+</div>
+
+<!-- ========== 关于我 ========== -->
+<div class="section" id="about">
+  <div class="about">
+    <div class="about-text">
+      <h2>关于我</h2>
+      <p style="font-size:15px;line-height:1.9;">
+        没有一朵花，一开始就是一朵花。
+      </p>
+      <p style="margin-top:8px;">
+        我是陈小银，安徽生、北京拼、重庆安，处女座，<br>
+        带点文艺，温柔但清醒，谈情也谈成长的90后女生。
+      </p>
+      <p style="margin-top:12px;color:var(--text-l);font-size:14px;">
+        对了，我超级爱喝☕️ 爱🎨 爱🚄 爱✏️ 爱😪，<br>
+        正在马不停蹄的成为一朵花🌸
+      </p>
+    </div>
+    <div class="about-img" style="width:180px;height:180px;border-radius:50%;overflow:hidden;background:linear-gradient(135deg,#f5a89a,#e8714a,#e8a33d);box-shadow:0 8px 32px rgba(232,113,74,0.20);">
+      <img src="images/about-real.png" alt="陈小银" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+  </div>
+</div>
+
+<!-- ========== 页脚 ========== -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#" onclick="event.preventDefault(); document.getElementById('wechat-qrcode').style.display='flex';">微信公众号</a>
+    <a href="https://www.xiaoyuzhoufm.com" target="_blank">小宇宙播客</a>
+  </div>
+  <p>© 2026 我是陈小银 · 没有一朵花，一开始就是一朵花 🌸</p>
+</footer>
+
+<script>
+  // 导航滚动阴影
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+
+  // 手机菜单
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    links.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
