@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上半年收官：我们都有不为人知的B面人生 — 我是陈小银</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-cover {
+      width: 100%;
+      max-width: 720px;
+      height: 320px;
+      margin: 0 auto 40px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #f5a89a, #e8714a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      color: rgba(255,255,255,0.7);
+      box-shadow: 0 8px 32px rgba(232,113,74,0.25);
+      overflow: hidden;
+    }
+    .article-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (max-width:768px) {
+      .article-cover { height: 200px; font-size: 48px; }
+    }
+    .wechat-promo {
+      max-width: 720px;
+      margin: 60px auto 0;
+      padding: 40px 32px;
+      background: linear-gradient(135deg, #fde8d8, #fef9f5);
+      border-radius: 16px;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    .wechat-promo h3 {
+      font-size: 20px;
+      color: var(--brown-d);
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .wechat-promo p {
+      font-size: 14px;
+      color: var(--text-l);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    .wechat-promo .qrcode-box {
+      display: inline-block;
+      padding: 12px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .wechat-promo .qrcode-box img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+    .wechat-promo .qrcode-tip {
+      font-size: 12px;
+      color: var(--text-l);
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+    }
+    .float-follow {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      z-index: 90;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: var(--orange);
+      color: var(--white);
+      border: none;
+      border-radius: 40px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(232,113,74,0.4);
+      transition: all 0.3s;
+      font-family: "Noto Sans SC", sans-serif;
+    }
+    .float-follow:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(232,113,74,0.5);
+    }
+    .float-follow .icon { font-size: 18px; }
+    @media (max-width:768px) {
+      .float-follow { bottom: 20px; right: 16px; padding: 10px 16px; font-size: 13px; }
+    }
+    .article-end {
+      text-align: center;
+      margin: 48px 0 20px;
+      color: var(--text-l);
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    .article-end span {
+      display: inline-block;
+      padding: 0 16px;
+      position: relative;
+    }
+    .article-end span::before,
+    .article-end span::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      height: 1px;
+      background: var(--border);
+    }
+    .article-end span::before { right: 100%; }
+    .article-end span::after { left: 100%; }
+  </style>
+</head>
+<body>
+
+<!-- ========== 导航 ========== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo" style="font-size:16px;letter-spacing:1px;">欢迎进入小银的世界</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">首页</a></li>
+      <li><a href="../life.html" class="active">生活</a></li>
+      <li><a href="../feelings.html">感情</a></li>
+      <li><a href="../work.html">工作</a></li>
+      <li><a href="../index.html#about">Me</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ========== 文章头部 ========== -->
+<section class="article-hero">
+  <div class="article-cover">
+    <img src="../images/life-2026-h1.jpeg" alt="上半年收官">
+  </div>
+  <h1>上半年收官：<br>我们都有不为人知的B面人生</h1>
+  <div class="meta">
+    <span class="article-cat life" style="margin-right:8px;">生活</span>
+    2026.06.30 &nbsp;·&nbsp; 微信公众号
+  </div>
+</section>
+
+<!-- ========== 文章正文 ========== -->
+<article class="article-content">
+
+  <p>2026年6月30日，重庆终于放晴了。</p>
+
+  <p>连续下了快两周的雨，衣服晾了三天还不干，空气里全是潮味。早上出门的时候，阳光打在观音桥的地面上，我竟然有点不习惯。</p>
+
+  <p>晚上和老友吃饭。说是老友，其实也就是一年见两三次的那种。但在我心里，能坐下来不装、不汇报、不互相打气的，就算老友了。</p>
+
+  <p>我们要了一瓶清酒，她抽了一根烟——粉色包装的，说是她女儿帮她挑的。一个四十多岁的女高管，抽着粉色包装的烟，在烟雾里跟我讲她上个月差点辞职的事。</p>
+
+  <p>她说：你知道的，我在公司里永远是那个逻辑清晰、情绪稳定、PPT写得最好的人。但那天在洗手间里，我对着镜子站了五分钟，心里只有一个念头——我想回家。</p>
+
+  <p>不是累了那种想回家。是那种……觉得自己一直在演，演到不知道哪个才是真正的自己。</p>
+
+  <h2>A面</h2>
+
+  <p>我们每个人都有A面。</p>
+
+  <p>A面是给别人看的。工整体面，情绪稳定，回答问题有条理，遇到突发状况能扛。A面是我们花了很多年打磨出来的，是我们希望世界记住的样子。</p>
+
+  <p>我自己的A面大概是：温柔但清醒，有边界感，不乱发脾气，不占别人便宜，做事有交代。</p>
+
+  <p>这个A面帮我走了很远。它让我在职场里被信任，在朋友里被托付，在家人眼里是一个"过得不错"的人。</p>
+
+  <p>但A面是有成本的。</p>
+
+  <p>它的成本是——你不能垮。你一旦垮了，别人不知道怎么跟你相处。他们习惯了你的A面，你突然把B面露出来，他们会慌。</p>
+
+  <p>我有一个朋友，结婚八年，从来没在老公面前哭过。不是不难过，是她觉得"我哭了他就觉得我不行了"。她的A面是"我很好"，这个A面太稳了，稳到她老公有时候都忘了问她一句"你最近还好吗"。</p>
+
+  <h2>B面</h2>
+
+  <p>B面是啥？B面是那些你不让别人轻易看到的部分。</p>
+
+  <p>可能是你在车里听完的那首老歌，可能是你深夜翻了三遍的那个人的朋友圈，可能是你其实很想辞职但说不出口的那个念头。</p>
+
+  <p>B面不一定是负面的。它只是……更真实。</p>
+
+  <p>那天晚上，老友跟我说完那些话之后，我们沉默了好一会儿。然后她把烟掐灭，笑着说：说出来就好了。你看，B面见见光，也没那么可怕。</p>
+
+  <p>我想起自己上半年也有一个B面时刻。</p>
+
+  <p>五月份的一个周六，我一个人在家。本来计划是把下周的课备完，结果下午两点的时候，我突然把电脑合上了。然后我做了一件很"不像我"的事——我坐轻轨随便坐了几站，在临江门下车，沿着江边走了一个多小时。</p>
+
+  <p>什么都没想。就只是走。</p>
+
+  <p>走完之后回去，课也没备，但心里好像松了一点。</p>
+
+  <p>那个下午，我的A面不在。只有B面——一个不想那么有用、不想那么清醒、只是想走走的B面。</p>
+
+  <h2>收官</h2>
+
+  <p>写这篇的时候，我在想：上半年收官，收的到底是什么？</p>
+
+  <p>以前我觉得收官是盘点KPI、盘点目标完成率、盘点自己又进步了多少。</p>
+
+  <p>今年我觉得，收官应该是——看看自己有没有机会见到自己的B面。</p>
+
+  <p>A面让我们在社会上立足，B面让我们回到自己。</p>
+
+  <p>两者都不是假的。A面是你对世界的贡献，B面是你对自已的诚实。</p>
+
+  <p>最好的状态可能不是"A面完美、B面消失"，而是——你有机会在安全的、信任的人面前，把B面也摊开来，晒一晒。</p>
+
+  <p>就像那天晚上，清酒、粉色包装的烟、重庆终于放晴的夜晚。</p>
+
+  <p>那一刻，我们都不是谁的A面。</p>
+
+  <p>只是两个人，坐在烟雾和酒杯之间，说了一些不体面但真实的话。</p>
+
+  <div class="article-end"><span>· 全文完 ·</span></div>
+
+  <!-- ========== 公众号引流区 ========== -->
+  <div class="wechat-promo">
+    <h3>📖 喜欢这篇文章？</h3>
+    <p>关注公众号「我是陈小银」<br>每周更新，陪你谈情也谈成长</p>
+    <div class="qrcode-box">
+      <img src="../images/qrcode-wechat.png" alt="公众号二维码">
+    </div>
+    <div class="qrcode-tip">微信扫码关注</div>
+  </div>
+
+</article>
+
+<!-- ========== 浮动关注按钮 ========== -->
+<button class="float-follow" onclick="document.getElementById('wechat-qrcode-modal').style.display='flex';">
+  <span class="icon">📱</span> 关注公众号
+</button>
+
+<!-- 二维码弹窗 -->
+<div id="wechat-qrcode-modal" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:200;align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none';">
+  <div style="background:var(--white);border-radius:16px;padding:32px;text-align:center;max-width:300px;width:90%;">
+    <h3 style="font-size:18px;color:var(--brown-d);margin-bottom:16px;">扫码关注公众号</h3>
+    <img src="../images/qrcode-wechat.png" alt="公众号二维码" style="width:180px;height:180px;border-radius:8px;">
+    <p style="font-size:13px;color:var(--text-l);margin-top:12px;">「我是陈小银」每周更新</p>
+    <button onclick="document.getElementById('wechat-qrcode-modal').style.display='none';" style="margin-top:16px;padding:8px 24px;border:1px solid var(--border);border-radius:20px;background:var(--white);color:var(--text-l);cursor:pointer;font-size:13px;">关闭</button>
+  </div>
+</div>
+
+<!-- ========== 页脚 ========== -->
+<div class="footer">
+  <div class="footer-links">
+    <a href="../index.html">首页</a>
+    <a href="../life.html">生活</a>
+    <a href="../feelings.html">感情</a>
+    <a href="../work.html">工作</a>
+  </div>
+  <p>© 2026 我是陈小银 · 没有一朵花，一开始就是一朵花</p>
+</div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+</body>
+</html>

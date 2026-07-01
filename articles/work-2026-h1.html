@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>半年复盘：做得好的和做得差的 — 我是陈小银</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* 文章页额外样式 */
+    .article-cover {
+      width: 100%;
+      max-width: 720px;
+      height: 320px;
+      margin: 0 auto 40px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #d4c8b8, #6b5b4f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      color: rgba(255,255,255,0.7);
+      box-shadow: 0 8px 32px rgba(90,70,50,0.15);
+    }
+    @media (max-width:768px) {
+      .article-cover { height: 200px; font-size: 48px; }
+    }
+    /* 公众号引流区 */
+    .wechat-promo {
+      max-width: 720px;
+      margin: 60px auto 0;
+      padding: 40px 32px;
+      background: linear-gradient(135deg, #fde8d8, #fef9f5);
+      border-radius: 16px;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    .wechat-promo h3 {
+      font-size: 20px;
+      color: var(--brown-d);
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .wechat-promo p {
+      font-size: 14px;
+      color: var(--text-l);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    .wechat-promo .qrcode-box {
+      display: inline-block;
+      padding: 12px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .wechat-promo .qrcode-box img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+    .wechat-promo .qrcode-tip {
+      font-size: 12px;
+      color: var(--text-l);
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+    }
+    /* 浮动关注按钮 */
+    .float-follow {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      z-index: 90;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: var(--orange);
+      color: var(--white);
+      border: none;
+      border-radius: 40px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(232,113,74,0.4);
+      transition: all 0.3s;
+      font-family: "Noto Sans SC", sans-serif;
+    }
+    .float-follow:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(232,113,74,0.5);
+    }
+    .float-follow .icon { font-size: 18px; }
+    @media (max-width:768px) {
+      .float-follow { bottom: 20px; right: 16px; padding: 10px 16px; font-size: 13px; }
+    }
+    /* 文章结尾 */
+    .article-end {
+      text-align: center;
+      margin: 48px 0 20px;
+      color: var(--text-l);
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    .article-end span {
+      display: inline-block;
+      padding: 0 16px;
+      position: relative;
+    }
+    .article-end span::before,
+    .article-end span::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      height: 1px;
+      background: var(--border);
+    }
+    .article-end span::before { right: 100%; }
+    .article-end span::after { left: 100%; }
+  </style>
+</head>
+<body>
+
+<!-- ========== 导航 ========== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo" style="font-size:16px;letter-spacing:1px;">欢迎进入小银的世界</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">首页</a></li>
+      <li><a href="../life.html">生活</a></li>
+      <li><a href="../feelings.html">感情</a></li>
+      <li><a href="../work.html" class="active">工作</a></li>
+      <li><a href="../index.html#about">Me</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ========== 文章头部 ========== -->
+<section class="article-hero">
+  <div class="article-cover">🪞</div>
+  <h1>半年复盘：<br>做得好的和做得差的</h1>
+  <div class="meta">
+    <span class="article-cat work" style="margin-right:8px;">工作</span>
+    2026.07.01 &nbsp;·&nbsp; 微信公众号
+  </div>
+</section>
+
+<!-- ========== 文章正文 ========== -->
+<article class="article-content">
+
+  <p>每年六月底，我都会做一件事：关掉手机两小时，坐在咖啡馆靠窗的位置，拿一支笔、一张纸，左边写"做得好的"，右边写"做得差的"。</p>
+
+  <p>这件事我从2020年开始做，做到今年是第六年了。</p>
+
+  <p>以前写的时候，左边往往凑不满，右边倒是洋洋洒洒。今年不一样，左边竟然比右边多了两行。也不知道是进步了，还是脸皮厚了。</p>
+
+  <h2>做得好的</h2>
+
+  <p><strong>第一件事，我学会了对客户说"不"。</strong></p>
+
+  <p>上半年有个项目，对方要我一周内出全套方案，预算压得很低。换作以前，我会咬牙接了，然后熬夜赶、反复改，最后里外都不落好。这一次我直接说：这个时间我给不了，如果你们可以接受两周，我来做。</p>
+
+  <p>对方犹豫了三天，回复说，那就两周。</p>
+
+  <p>你看，有边界感，反而被尊重。</p>
+
+  <p><strong>第二件事，我开始把"做对的事"放在"把事情做对"前面。</strong></p>
+
+  <p>以前我特别迷恋方法论和工具，总觉得自己还不够专业，得再学点东西才能上路。上半年一个训练营项目，传统做法是先建模型再推数据，我反其道行之，先带学员下车间，摸到真实的问题，再回来上课。</p>
+
+  <p>效果出奇得好。有个学员跟我说，老师你讲的不是理论，是我昨天手刚碰到的问题。</p>
+
+  <p>那一刻我懂了，专业不是你知道多少，而是你的东西别人用不用得上。</p>
+
+  <p><strong>第三件事，我终于不再把周末当工作日用。</strong></p>
+
+  <p>听起来很小对不对？但对一个处女座来说，这很难。以前周末不打开电脑，就觉得自己在偷懒。今年上半年，我发现自己会在周六下午去逛书店，周日上午睡到自然醒，甚至会专门坐一小时轻轨去解放碑喝一杯手冲。</p>
+
+  <p>工作效率不但没降，反而因为休息好了，周一的状态比之前更好。</p>
+
+  <p>原来休息不是偷懒，是对工作的尊重。</p>
+
+  <h2>做得差的</h2>
+
+  <p><strong>第一件，我把"忙"当成逃避的借口太多次了。</strong></p>
+
+  <p>朋友约吃饭，我说在忙。妈妈打电话，我说在忙。甚至自己去年底说好的要开始运动，到现在跑步鞋还崭新地躺在鞋柜里。</p>
+
+  <p>忙是真的，但不是所有拒绝都用忙来挡。</p>
+
+  <p>有个周六中午，朋友反复约了我三次，我终于去了。我们在北城天街吃了顿火锅，她跟我说了一件事，让我当场想通了一个卡了两个月的工作难题。</p>
+
+  <p>那一刻我才意识到，那些我因为忙拒绝掉的"没用的事"，可能恰恰是对我有用的。</p>
+
+  <p><strong>第二件，有些关系我处理得太粗糙了。</strong></p>
+
+  <p>上半年有个合作方，我们因为一个执行细节的分歧，三个月没说过话。其实事情不大，谁也没做错什么，就是面子都拗着。后来项目结束复盘的时候，我发现自己花了太多时间在心里预设"他们怎么想的"，而不是直接拿起电话问一句。</p>
+
+  <p>成年人的关系，很多不是矛盾杀死的，是沉默杀死的。</p>
+
+  <p><strong>第三件，我的输入太少了。</strong></p>
+
+  <p>说出来可能要挨骂——半年只完整看了四本书，公众号文章也大多是扫一眼标题就划过。感觉每天都在输出、输出、输出，输入却几乎断了。</p>
+
+  <p>六月中旬有一天，我在笔记本上写方案，发现来来回回就是那几个词，没有新东西，也不出彩了。那一刻我慌了。</p>
+
+  <p>下半年必须把阅读量补回来，书单已经列好了。</p>
+
+  <div class="article-end"><span>· 全文完 ·</span></div>
+
+  <!-- ========== 公众号引流区 ========== -->
+  <div class="wechat-promo">
+    <h3>📖 喜欢这篇文章？</h3>
+    <p>关注公众号「我是陈小银」<br>每周更新，陪你谈情也谈成长</p>
+    <div class="qrcode-box">
+      <img src="../images/qrcode-wechat.png" alt="公众号二维码">
+    </div>
+    <div class="qrcode-tip">微信扫码关注</div>
+  </div>
+
+</article>
+
+<!-- ========== 浮动关注按钮 ========== -->
+<button class="float-follow" onclick="document.getElementById('wechat-qrcode-modal').style.display='flex';">
+  <span class="icon">📱</span> 关注公众号
+</button>
+
+<!-- 二维码弹窗 -->
+<div id="wechat-qrcode-modal" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:200;align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none';">
+  <div style="background:var(--white);border-radius:16px;padding:32px;text-align:center;max-width:300px;width:90%;">
+    <h3 style="font-size:18px;color:var(--brown-d);margin-bottom:16px;">扫码关注公众号</h3>
+    <img src="../images/qrcode-wechat.png" alt="公众号二维码" style="width:180px;height:180px;border-radius:8px;">
+    <p style="font-size:13px;color:var(--text-l);margin-top:12px;">「我是陈小银」每周更新</p>
+    <button onclick="document.getElementById('wechat-qrcode-modal').style.display='none';" style="margin-top:16px;padding:8px 24px;border:1px solid var(--border);border-radius:20px;background:var(--white);color:var(--text-l);cursor:pointer;font-size:13px;">关闭</button>
+  </div>
+</div>
+
+<!-- ========== 页脚 ========== -->
+<div class="footer">
+  <div class="footer-links">
+    <a href="../index.html">首页</a>
+    <a href="../life.html">生活</a>
+    <a href="../feelings.html">感情</a>
+    <a href="../work.html">工作</a>
+  </div>
+  <p>© 2026 我是陈小银 · 没有一朵花，一开始就是一朵花</p>
+</div>
+
+<script>
+  // 导航手机端切换
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  // 导航滚动阴影
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+</body>
+</html>
